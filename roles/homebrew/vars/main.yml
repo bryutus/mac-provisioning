@@ -1,0 +1,29 @@
+homebrew_taps:
+  - caskroom/cask
+
+homebrew_cask_packages:
+  - { name: appcleaner }
+  - { name: caffeine }
+  - { name: dropbox }
+  - { name: google-chrome }
+  - { name: slack }
+  - { name: vagrant }
+  - { name: bettertouchtool }
+  - { name: evernote }
+  - { name: spotify }
+  - { name: virtualbox }
+
+homebrew_packages:
+  - { name: brew-cask-completion }
+  - { name: git }
+  - { name: go }
+  - { name: ghq }
+  - { name: node }
+  - { name: redis }
+  - { name: vim }
+  - { name: zsh, install_options: disable-etcdir }
+  - { name: tree }
+  - { name: homebrew/php/composer }
+  - { name: nkf }
+  - { name: mas  }
+

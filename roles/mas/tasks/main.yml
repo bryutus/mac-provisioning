@@ -1,0 +1,19 @@
+- name: logout AppStore
+  shell: >
+    mas signout
+
+- name: login AppStore
+  shell: >
+    mas signin --dialog {{ apple_id }}
+
+- name: install applications
+  shell: >
+    mas install {{ item.id }}
+  with_items: "{{ mas_applications }}"
+  when: mas_applications
+  run_once: true
+
+- name: update applications
+  shell: >
+    mas upgrade
+

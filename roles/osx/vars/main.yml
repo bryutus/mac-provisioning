@@ -1,0 +1,261 @@
+osx_setting:
+  # ファイルの拡張子を表示
+  - {
+      domain: NSGlobalDomain,
+      key: AppleShowAllExtensions,
+      type: bool,
+      value: true,
+    }
+  # 不可視ファイルを表示
+  - {
+      domain: com.apple.finder,
+      key: AppleShowAllFiles,
+      type: bool,
+      value: true,
+    }
+  # Dockを自動的に隠す
+  - {
+      domain: com.apple.dock,
+      key: autohide,
+      type: bool,
+      value: true,
+    }
+  # Dockのアイコンサイズ
+  - {
+      domain: com.apple.dock,
+      key: tilesize,
+      type: int,
+      value: 48,
+    }
+  # Dockアイコンの拡大を有効
+  - {
+      domain: com.apple.dock,
+      key: magnification,
+      type: bool,
+      value: true,
+    }
+  # Dockアイコンの拡大サイズ
+  - {
+      domain: com.apple.dock,
+      key: largesize,
+      type: int,
+      value: 64,
+    }
+  # タップでクリック
+  - {
+      domain: com.apple.AppleMultitouchTrackpad,
+      key: Clicking,
+      type: bool,
+      value: true,
+    }
+  - {
+      domain: com.apple.driver.AppleBluetoothMultitouch.trackpad,
+      key: Clicking,
+      type: bool,
+      value: true,
+    }
+  - {
+      domain: 'Apple Global Domain',
+      key: com.apple.mouse.tapBehavior,
+      type: int,
+      value: 1,
+    }
+  # ライブ変換機能オフ
+  - {
+      domain: com.apple.inputmethod.Kotoeri,
+      key: JIMPrefLiveConversionKey,
+      type: bool,
+      value: false,
+    }
+  # スペルの自動変換オフ、先頭の文字を自動的に大文字オフ
+  - {
+      domain: 'Apple Global Domain',
+      key: NSAutomaticCapitalizationEnabled,
+      type: bool,
+      value: false,
+    }
+  - {
+      domain: 'Apple Global Domain',
+      key: NSAutomaticDashSubstitutionEnabled,
+      type: bool,
+      value: true,
+    }
+  - {
+      domain: 'Apple Global Domain',
+      key: NSAutomaticQuoteSubstitutionEnabled,
+      type: bool,
+      value: true,
+    }
+  - {
+      domain: 'Apple Global Domain',
+      key: NSAutomaticSpellingCorrectionEnabled,
+      type: bool,
+      value: false,
+    }
+  - {
+      domain: 'Apple Global Domain',
+      key: NSAutomaticTextCompletionEnabled,
+      type: bool,
+      value: true,
+    }
+  - {
+      domain: 'Apple Global Domain',
+      key: WebAutomaticSpellingCorrectionEnabled,
+      type: bool,
+      value: false,
+    }
+  # バッテリー残量を%表示に
+  - {
+      domain: 'com.apple.menuextra.battery',
+      key: ShowPercent,
+      type: string,
+      value: 'YES',
+    }
+  # Fnを標準のファンクションキーとして使用
+  - {
+      domain: 'Apple Global Domain',
+      key: com.apple.keyboard.fnState,
+      type: bool,
+      value: true,
+  }
+  # Macとアイクラウドデバイス間でのHandoffを許可をオフ
+  # TODO::: 値の書き換えができていない
+  - {
+      domain: com.apple.coreservices.useractivityd,
+      key: ActivityAdvertisingAllowed,
+      type: bool,
+      value: false,
+  }
+  - {
+      domain: com.apple.coreservices.useractivityd,
+      key: ActivityReceivimgAllowed,
+      type: bool,
+      value: false,
+  }
+  # スクリーンキャプチャの保存ファイル形式
+  - {
+      domain: com.apple.screencapture,
+      key: type,
+      type: string,
+      value: 'png',
+  }
+  # スクリーンキャプチャの保存先を設定
+  - {
+      domain: com.apple.screencapture,
+      key: location,
+      type: string,
+      value: '~/Documents/ScreenCapture/',
+  }
+  # スクリーンキャプチャの保存ファイル名を変更
+  - {
+      domain: com.apple.screencapture,
+      key: name,
+      type: string,
+      value: 'SC_'
+  }
+  # スクリーンキャプチャでの陰影をなくす
+  - {
+      domain: com.apple.screencapture,
+      key: disable-shadow,
+      type: bool,
+      value: true,
+  }
+  # メニューバーにアカウント名を表示
+  - {
+      domain: 'Apple Global Domain',
+      key: userMenuExtraStyle,
+      type: int,
+      value: 1,
+  }
+  - {
+      domain: com.apple.systemuiserver,
+      key: 'NSStatusItem Visible com.apple.menuextra.appleuser',
+      type: bool,
+      value: true,
+  }
+  # TODO::: 配列に追加ができていない
+  - {
+      array_add: true,
+      domain: com.apple.systemuiserver,
+      key: menuExtras,
+      type: array,
+      value: "['/System/Library/CoreServices/Menu Extras/User.menu']",
+  }
+   # Finderをカラム表示に
+  - {
+      domain: com.apple.finder,
+      key: FXPreferredViewStyle,
+      type: string,
+      value: 'clmv',
+  }
+  # タイトルバーにフルパスを表示
+  - {
+      domain: com.apple.finder,
+      key: _FXShowPosixPathInTitle,
+      type: bool,
+      value: true,
+  }
+  # パスバーを表示
+  - {
+      domain: com.apple.finder,
+      key: ShowPathbar,
+      type: bool,
+      value: true,
+  }
+  # 他のウィンドウに移った際にQuick Lookをオフ
+  - {
+      domain: com.apple.finder,
+      key: QLHidePanelOnDeactivate,
+      type: bool,
+      value: true,
+  }
+  # Quick Look上でテキストの選択を可能
+  - {
+      domain: com.apple.finder,
+      key: QLEnableTextSelection,
+      type: bool,
+      value: true,
+  }
+  # フォルダを開くときのアニメーションを無効
+  - {
+      domain: com.apple.finder,
+      key: AnimateWindowZoom,
+      type: bool,
+      value: false,
+  }
+  # Finderのアニメーション効果を全て無効にする 
+  - {
+      domain: com.apple.finder,
+      key: DisableAllAnimations,
+      type: bool,
+      value: true,
+  }
+  # Finderの効果音を無効にする
+  - {
+      domain: com.apple.finder,
+      key: FinderSounds,
+      type: bool,
+      value: false,
+  }
+  # ネットワークフォルダに.DS_Storeを作らない
+  - {
+      domain: com.apple.desktopservice,
+      key: DSDontWriteNetworkStores,
+      type: bool,
+      value: true,
+  }
+  # Mission Control のホットコーナーの設定
+  # 右下 → デスクトップ表示
+  - {
+      domain: com.apple.dock,
+      key: wvous-br-corner,
+      type: int,
+      value: 4,
+  }
+  - {
+      domain: com.apple.dock,
+      key: wvous-br-modifier,
+      type: int,
+      value: 0,
+  }
+
