@@ -1,0 +1,7 @@
+dotfiles:
+  - .gitconfig
+  - .vim
+  - .vimrc
+  - .zshenv
+  - .zshrc
+
