@@ -5,8 +5,8 @@
 
 - name: create symbolic link
   file:
-    src: ~/.dotfiles/{{ item }}
-    dest: ~/{{ item }}
+    src: ~/.dotfiles/{{ item.src }}
+    dest: ~/{{ item.dest }}
     state: link
     force: yes
   with_items: "{{ dotfiles }}"
