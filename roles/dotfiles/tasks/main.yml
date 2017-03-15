@@ -11,3 +11,10 @@
     force: yes
   with_items: "{{ dotfiles }}"
 
+- name: add zsh
+  shell: echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells
+  become: yes
+
+- name: change login shell
+  shell: chsh -s /usr/local/bin/zsh
+
