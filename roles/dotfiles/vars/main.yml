@@ -1,7 +1,6 @@
 dotfiles:
-  - { src: .gitconfig, dest: .gitconfig }
-  - { src: .vim/plugin/.vim, dest: .vim }
-  - { src: .vimrc, dest: .vimrc }
-  - { src: .zshenv, dest: .zshenv }
-  - { src: .zshrc, dest: .zshrc }
+  - .gitconfig
+  - .vim
+  - .vimrc
+  - .zshrc
 
