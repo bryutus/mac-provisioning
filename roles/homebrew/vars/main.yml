@@ -26,4 +26,5 @@ homebrew_packages:
   - { name: homebrew/php/composer }
   - { name: nkf }
   - { name: mas  }
+  - { name: npm }
 
