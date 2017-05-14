@@ -12,6 +12,8 @@ homebrew_cask_packages:
   - { name: evernote }
   - { name: spotify }
   - { name: virtualbox }
+  - { name: google-japanese-ime}
+  - { name: atom }
 
 homebrew_packages:
   - { name: brew-cask-completion }
