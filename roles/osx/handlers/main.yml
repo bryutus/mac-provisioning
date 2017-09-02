@@ -1,4 +1,4 @@
-- name: apply setting 
+- name: apply setting
   shell: >
     killall SystemUIServer;
     killall Dock;

@@ -1,5 +1,5 @@
 # 起動音量の確認 nvram -p | grep SystemAudioVolume
-- name: disable start up sound 
+- name: disable start up sound
   command: /usr/sbin/nvram SystemAudioVolume=%00
   become: yes
 

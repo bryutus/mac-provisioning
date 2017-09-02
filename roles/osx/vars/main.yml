@@ -223,7 +223,7 @@ osx_setting:
       type: bool,
       value: false,
   }
-  # Finderのアニメーション効果を全て無効にする 
+  # Finderのアニメーション効果を全て無効にする
   - {
       domain: com.apple.finder,
       key: DisableAllAnimations,
