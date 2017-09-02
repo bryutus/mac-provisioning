@@ -1,4 +1,5 @@
 # 起動音量の確認 nvram -p | grep SystemAudioVolume
+# Note: 実行時に--ask-become-passオプションを付けて、パスワードを入力する必要あり
 - name: disable start up sound
   command: /usr/sbin/nvram SystemAudioVolume=%00
   become: yes
@@ -25,4 +26,3 @@
   with_items: "{{ osx_setting }}"
   notify: apply setting
   changed_when: true
-
