@@ -12,6 +12,9 @@ homebrew_cask_packages:
   - { name: evernote }
   - { name: spotify }
   - { name: virtualbox }
+  - { name: atom }
+  - { name: docker }
+  - { name: google-japanese-ime }
 
 homebrew_packages:
   - { name: brew-cask-completion }
@@ -27,4 +30,7 @@ homebrew_packages:
   - { name: nkf }
   - { name: mas  }
   - { name: npm }
+  - { name: rename }
+  - { name: wget }
+  - { name: docker }
 
