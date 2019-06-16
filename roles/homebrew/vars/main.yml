@@ -3,17 +3,18 @@ homebrew_taps:
 
 homebrew_cask_packages:
   - { name: appcleaner }
-  - { name: caffeine }
   - { name: dropbox }
   - { name: google-chrome }
   - { name: slack }
   - { name: vagrant }
   - { name: bettertouchtool }
-  - { name: evernote }
   - { name: spotify }
   - { name: virtualbox }
   - { name: google-japanese-ime}
-  - { name: atom }
+  - { name: visual-studio-code }
+  - { name: font-fira-code }
+  - { name: docker }
+  - { name: kindle }
 
 homebrew_packages:
   - { name: brew-cask-completion }
@@ -29,4 +30,18 @@ homebrew_packages:
   - { name: nkf }
   - { name: mas  }
   - { name: npm }
-
+  - { name: awscli }
+  - { name: ffmpeg }
+  - { name: imagemagick }
+  - { name: jq }
+  - { name: peco }
+  - { name: php-cs-fixer }
+  - { name: php-code-sniffer }
+  - { name: php@7.2 }
+  - { name: plantuml }
+  - { name: ghr }
+  - { name: protobuf }
+  - { name: python3 }
+  - { name: wget }
+  - { name: docker }
+  - { name: docker-compose }
