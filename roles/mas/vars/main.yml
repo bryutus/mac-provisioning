@@ -1,10 +1,7 @@
 mas_applications:
-  - { name: '1Password', id: 443987910 }
+  - { name: '1Password 7', id: 1333542190 }
   - { name: 'Day One', id: 1055511498 }
-  - { name: 'ReadKit', id: 588726889 }
   - { name: 'Pixelmator', id: 407963104 }
-#  - { name: 'ForkLift', id: 412448059 }
-#  - { name: 'PopClip', id: 445189367}
-  - { name: 'Things', id: 407951449  }
-#  - { name: 'iA Writer', id: 775737590 }
-
+  - { name: 'ForkLift', id: 412448059 }
+  - { name: 'Amphetamine', id: 937984704 }
+  - { name: 'Xcode', id: 497799835 }
