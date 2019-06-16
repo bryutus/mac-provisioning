@@ -15,6 +15,7 @@ homebrew_cask_packages:
   - { name: font-fira-code }
   - { name: docker }
   - { name: kindle }
+  - { name: brooklyn }
 
 homebrew_packages:
   - { name: brew-cask-completion }
