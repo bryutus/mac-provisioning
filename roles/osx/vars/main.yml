@@ -151,7 +151,7 @@ osx_setting:
       domain: com.apple.screencapture,
       key: name,
       type: string,
-      value: 'SC_'
+      value: 'SC'
   }
   # スクリーンキャプチャでの陰影をなくす
   - {
@@ -223,7 +223,7 @@ osx_setting:
       type: bool,
       value: false,
   }
-  # Finderのアニメーション効果を全て無効にする 
+  # Finderのアニメーション効果を全て無効にする
   - {
       domain: com.apple.finder,
       key: DisableAllAnimations,

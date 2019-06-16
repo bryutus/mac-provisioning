@@ -1,5 +1,5 @@
-# 起動音量の確認 nvram -p | grep SystemAudioVolume
-- name: disable start up sound 
+# check Startup Sound nvram -p | grep SystemAudioVolume
+- name: disable start up sound
   command: /usr/sbin/nvram SystemAudioVolume=%00
   become: yes
 
@@ -9,7 +9,7 @@
     state=directory
 
 - name: load locate.plist and register service
-  debug: msg="launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist"
+  debug: msg="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist"
   become: yes
   with_first_found:
     - files: /var/db/locate.database
