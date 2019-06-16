@@ -25,4 +25,3 @@
   with_items: "{{ osx_setting }}"
   notify: apply setting
   changed_when: true
-

@@ -258,4 +258,3 @@ osx_setting:
       type: int,
       value: 0,
   }
-
