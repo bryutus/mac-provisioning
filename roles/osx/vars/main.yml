@@ -51,8 +51,8 @@ osx_setting:
   - {
       domain: com.apple.driver.AppleBluetoothMultitouch.trackpad,
       key: Clicking,
-      type: int,
-      value: 1,
+      type: bool,
+      value: true,
     }
   - {
       domain: 'Apple Global Domain',
@@ -119,7 +119,6 @@ osx_setting:
       value: true,
   }
   # Macとアイクラウドデバイス間でのHandoffを許可をオフ
-  # TODO::: 値の書き換えができていない
   - {
       domain: com.apple.coreservices.useractivityd,
       key: ActivityAdvertisingAllowed,
@@ -160,28 +159,7 @@ osx_setting:
       type: bool,
       value: true,
   }
-  # メニューバーにアカウント名を表示
-  - {
-      domain: 'Apple Global Domain',
-      key: userMenuExtraStyle,
-      type: int,
-      value: 1,
-  }
-  - {
-      domain: com.apple.systemuiserver,
-      key: 'NSStatusItem Visible com.apple.menuextra.appleuser',
-      type: bool,
-      value: true,
-  }
-  # TODO::: 配列に追加ができていない
-  - {
-      array_add: true,
-      domain: com.apple.systemuiserver,
-      key: menuExtras,
-      type: array,
-      value: "['/System/Library/CoreServices/Menu Extras/User.menu']",
-  }
-   # Finderをカラム表示に
+  # Finderをカラム表示に
   - {
       domain: com.apple.finder,
       key: FXPreferredViewStyle,
@@ -210,6 +188,7 @@ osx_setting:
       value: true,
   }
   # Quick Look上でテキストの選択を可能
+  # Note: macOS Sierraでは利用不可
   - {
       domain: com.apple.finder,
       key: QLEnableTextSelection,
@@ -237,11 +216,11 @@ osx_setting:
       type: bool,
       value: false,
   }
-  # ネットワークフォルダに.DS_Storeを作らない
+  # .DS_Storeを作らない
   - {
-      domain: com.apple.desktopservice,
+      domain: com.apple.desktopservices,
       key: DSDontWriteNetworkStores,
-      type: bool,
+      type: string,
       value: true,
   }
   # Mission Control のホットコーナーの設定

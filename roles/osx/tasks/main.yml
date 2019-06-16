@@ -1,8 +1,3 @@
-# check Startup Sound nvram -p | grep SystemAudioVolume
-- name: disable start up sound
-  command: /usr/sbin/nvram SystemAudioVolume=%00
-  become: yes
-
 - name: Create directory to save screen capture
   file: >
     path=~/Documents/ScreenCapture
