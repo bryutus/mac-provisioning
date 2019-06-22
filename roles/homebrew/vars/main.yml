@@ -1,5 +1,6 @@
 homebrew_taps:
   - caskroom/cask
+  - caskroom/fonts
 
 homebrew_cask_packages:
   - { name: appcleaner }
@@ -16,18 +17,19 @@ homebrew_cask_packages:
   - { name: docker }
   - { name: kindle }
   - { name: brooklyn }
+  - { name: adoptopenjdk }
+  - { name: forklift }
 
 homebrew_packages:
-  - { name: brew-cask-completion }
   - { name: git }
   - { name: go }
   - { name: ghq }
   - { name: node }
   - { name: redis }
   - { name: vim }
-  - { name: zsh, install_options: disable-etcdir }
+  - { name: zsh }
   - { name: tree }
-  - { name: homebrew/php/composer }
+  - { name: composer }
   - { name: nkf }
   - { name: mas  }
   - { name: npm }
@@ -39,6 +41,7 @@ homebrew_packages:
   - { name: php-cs-fixer }
   - { name: php-code-sniffer }
   - { name: php@7.2 }
+  - { name: graphviz }
   - { name: plantuml }
   - { name: ghr }
   - { name: protobuf }
@@ -46,3 +49,4 @@ homebrew_packages:
   - { name: wget }
   - { name: docker }
   - { name: docker-compose }
+  - { name: ansible }

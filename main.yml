@@ -2,11 +2,8 @@
   connection: local
   gather_facts: no
   become: no
-  vars:
-    - apple_id: APPLE_ID
   roles:
     - homebrew
     - mas
     - osx
     - dotfiles
-

@@ -2,6 +2,6 @@ mas_applications:
   - { name: '1Password 7', id: 1333542190 }
   - { name: 'Day One', id: 1055511498 }
   - { name: 'Pixelmator', id: 407963104 }
-  - { name: 'ForkLift', id: 412448059 }
   - { name: 'Amphetamine', id: 937984704 }
   - { name: 'Xcode', id: 497799835 }
+  - { name: 'LINE', id : 539883307 }
